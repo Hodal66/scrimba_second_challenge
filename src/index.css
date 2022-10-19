@@ -1,13 +1,133 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card{
+  background-color:rgb(233, 242, 246);
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  margin: 40px;
+  border-radius: 20px;
+  gap: 40px;
+  
+  
+}
+
+.content_container{
+/* background-color: rgb(99, 99, 225); */
+
+  
+}
+.card__container{
+  background-color:rgb(255, 255, 255);
+  display:flex;
+  box-shadow:0px 2.9px 7.46px rgba(0,0,0,10%);
+  flex-direction:column;
+ margin: 20px;
+ padding: 20px;
+ border-radius: 20px;
+  justify-content:center;
+
+};
+
+.content_container{
+  /* background-color:rgb(226, 200, 200); */
+  width: 85%;
+}
+
+.rating_container{
+
+  /* background-color:blue; */
+  
+
+}
+.lating_icon{
+  padding-top: 5px;
+color:rgb(238, 69, 13);
+}
+
+.rating_container p{
+/* color:rgb(138, 161, 181); */
+  
+
+}
+.rating_container  span{
+  font-size:16px;
+  padding-bottom:20px;
+  padding-left:5px;
+
+
+}
+.requered_from{
+font-style: bold;
+font-weight: 6000;
+
+/* background-color:rebeccapurple */
+}
+
+.image__container img{
+  width: 100%;
+  height:100%;
+  /* background-color:yellow; */
+}
+
+.content_display{
+ margin-top: -5px;
+  color: gray;
+}
+
+@media screen and (max-width:800px){
+  .card{
+   
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin: 40px;
+    border-radius: 20px;
+    gap: 40px;
+    
+    
+  }
+  .card__container{
+   
+    display:flex;
+    box-shadow:0px 2.9px 7.46px rgba(0,0,0,10%);
+    flex-direction:column;
+   margin: 20px;
+   padding: 20px;
+   border-radius: 20px;
+    justify-content:center;
+  
+  };
+}
+
+
+@media screen and (max-width:500px){
+  .card{
+
+    display:grid;
+    grid-template-columns:1fr ;
+    margin: 40px;
+    border-radius: 20px;
+    gap: 40px;
+    
+    
+  }
+  .card__container{
+   
+    display:flex;
+    box-shadow:0px 2.9px 7.46px rgba(0,0,0,10%);
+    flex-direction:column;
+   margin: 20px;
+   padding: 20px;
+   border-radius: 20px;
+    justify-content:center;
+  
+  };
+
 }
